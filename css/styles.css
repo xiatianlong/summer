@@ -409,3 +409,58 @@ p {
         }
     }
 }
+
+
+
+
+
+
+
+.icon-div{
+			width: 100%;
+			position: fixed;
+			bottom: 0px;
+		}
+		.icon-link{
+			font-size: 22px;
+			display: inline-block;
+			margin-left: 0.7em;
+		}
+		.zzc{
+			filter:alpha(opacity=40); /*支持 IE 浏览器*/
+			-moz-opacity:0.40; /*支持 FireFox 浏览器*/
+			opacity:0.40; /*支持 Chrome, Opera, Safari 等浏览器*/
+			left:0px;
+			top:0px;
+			display:none;
+			position: fixed;
+			background-color: gray;
+			z-index: 98;
+		}
+		.zzc2{
+			filter:alpha(opacity=10); /*支持 IE 浏览器*/
+			-moz-opacity:0.10; /*支持 FireFox 浏览器*/
+			opacity:0.10; /*支持 Chrome, Opera, Safari 等浏览器*/
+			left:0px;
+			top:0px;
+			display:none;
+			position: fixed;
+			background-color: gray;
+			z-index: 100;
+		}
+		.loading-img{
+			position: fixed;
+			margin: auto;
+			width:65px;
+			height:68px;
+			display:none;
+			z-index:99;
+		}
+		.close-btn{
+			position: fixed;
+			top:2em;
+			right:2em;
+			font-size:3em;
+			z-index:101;
+			display:none;
+		}

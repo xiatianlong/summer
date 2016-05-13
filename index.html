@@ -10,94 +10,11 @@
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link href="font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet">
 	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
 	<!--[if IE]>
 		<script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
 	<![endif]-->
-	<style>
-		.icon-div{
-			width: 100%;
-			position: fixed;
-			bottom: 0px;
-		}
-		.icon-link{
-			font-size: 22px;
-			display: inline-block;
-			margin-left: 0.7em;
-		}
-		.zzc{
-			filter:alpha(opacity=40); /*支持 IE 浏览器*/
-			-moz-opacity:0.40; /*支持 FireFox 浏览器*/
-			opacity:0.40; /*支持 Chrome, Opera, Safari 等浏览器*/
-			left:0px;
-			top:0px;
-			display:none;
-			position: fixed;
-			background-color: gray;
-			z-index: 98;
-		}
-		.zzc2{
-			filter:alpha(opacity=10); /*支持 IE 浏览器*/
-			-moz-opacity:0.10; /*支持 FireFox 浏览器*/
-			opacity:0.10; /*支持 Chrome, Opera, Safari 等浏览器*/
-			left:0px;
-			top:0px;
-			display:none;
-			position: fixed;
-			background-color: gray;
-			z-index: 100;
-		}
-		.loading-img{
-			position: fixed;
-			margin: auto;
-			width:65px;
-			height:68px;
-			display:none;
-			z-index:99;
-		}
-		.close-btn{
-			position: fixed;
-			top:2em;
-			right:2em;
-			font-size:3em;
-			z-index:101;
-			display:none;
-		}
-	</style>
-	<script>
-		$(function(){
-			$(".zzc").height(pageHeight());
-			$(".zzc").width(pageWidth());
-			$(".zzc2").height(pageHeight());
-			$(".zzc2").width(pageWidth());
-		});
-		/* 当前页面高度 */
-		function pageHeight() {
-			return document.body.scrollHeight;
-		}
 
-		/* 当前页面宽度 */
-		function pageWidth() {
-			return document.body.scrollWidth;
-		}
-
-		function showWechat(){
-			$(".loading-img").css("top",pageHeight()/2-172);
-			$(".loading-img").css("left",pageWidth()/2-172);
-			/** 显示loading  begin*/
-			$(".zzc").show();
-			$(".zzc2").show();
-			$(".loading-img").show();
-			$(".close-btn").show();
-			/** 显示loading  end*/
-		}
-
-		function hideWechat(){
-			$(".zzc").hide();
-			$(".zzc2").hide();
-			$(".loading-img").hide();
-			$(".close-btn").hide();
-		}
-	</script>
 </head>
 <body>
 	<aside class="profile-card">
